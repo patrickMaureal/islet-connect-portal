@@ -1,0 +1,49 @@
+.btn-back {
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--color-white);
+	transition: 0.3s;
+	font-family: var(--font-primary);
+	border: none;
+}
+
+.btn-back:hover {
+	color: var(--color-white);
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-top: 5px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+}
+
+label {
+	font-size: 22px;
+	font-weight: 500;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+}
+
+.btn-signin {
+	font-size: 15px;
+	font-weight: 500;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 0.5rem 1rem;
+  margin: 10px;
+	border-radius: 0.5rem;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+	user-select: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.forgot-password {
+	font-size: 15px;
+	font-weight: 500;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+}

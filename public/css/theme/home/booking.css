@@ -1,0 +1,310 @@
+img {
+	max-width: none !important;
+}
+
+section {
+	padding: 0;
+	overflow: hidden;
+	background-image: url("../../../img/booking/booking-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 0;
+}
+h1 {
+	color: #262424 !important;
+	font-family: var(--font-secondary) !important;
+	font-weight: 700 !important;
+	font-size: 27px;
+	margin: 15px 0;
+}
+label {
+	color: #262424;
+	font-family: var(--font-secondary);
+	font-weight: 500;
+	font-size: 21px;
+	margin: 0;
+}
+
+a {
+	color: #262424;
+	font-family: var(--font-primary);
+	font-weight: 400;
+	font-size: 21px;
+	margin: 0;
+}
+
+p {
+	color: #262424;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 21px;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+/* booking nav  */
+.nav-wrapper {
+	z-index: 0;
+}
+
+.nav-line {
+	position: absolute;
+	left: 134px;
+	bottom: 45px;
+	width: 75%;
+	height: 5px;
+	background-color: #23AAE1; /* Adjust color as needed */
+	z-index: -1; /* Ensure it stays behind the nav items */
+}
+.nav-pills .nav-link {
+	border-radius: 50%; /* Make the nav-pills circular */
+	width: 40px; /* Set width to maintain circular shape */
+	height: 40px; /* Set height to maintain circular shape */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	transition: all 0.2s ease;
+	box-shadow: none;
+	border: 3px solid #23AAE1 ;
+	background-color: var(--color-white);
+}
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+	width: 0% !important;
+	padding: 30px 29px;
+}
+.nav-link {
+	color: #3E3E3E;
+	font-size: 30px;
+}
+
+.nav-fill > .nav-link, .nav-fill .nav-item {
+	flex: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	border-color: #23AAE1;
+}
+
+/* mobile nav */
+@media (max-width: 575px) {
+	.nav-line {
+		transform: rotate(90deg);
+		left: 0;
+    bottom: 238px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and	(max-width: 991px) {
+	.nav-line {
+		left: 86px;
+    bottom: 62px;
+	}
+}
+
+/* Steps form css */
+.step-labels .label {
+	font-size: 16px;
+	font-weight: 400;
+	color: #3E3E3E;
+	font-family: var(--font-secondary);
+}
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	line-height: 1.5;
+	color: #262424 !important;
+	background-color: #F9F9F9;
+	background-clip: padding-box;
+	border: 1px solid #262424;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 15px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	font-family: var(--font-primary);
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(0,0,0, 0.12);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="date"] {
+	font-family: var(--font-primary);
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(0,0,0, 0.12);
+	font-style: italic; /* Adjust the alpha value (0.5) as needed */
+}
+
+.input-group-text,
+.btn {
+	border: 1px solid #262424;
+}
+
+.btn-register {
+	font-size: 22px;
+	font-weight: 500;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+}
+.table thead th {
+	font-family: var(--font-primary);
+	color: #262424 !important;
+}
+
+.btn-next,
+.btn-previous {
+	font-size: 18px;
+	font-weight: 500;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 5px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+}
+
+.btn-select {
+	font-size: 18px;
+	font-weight: 500;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+}
+
+
+.btn-select:hover {
+	color: var(--color-white);
+	background: #F7901F;
+}
+
+.btn-add {
+	font-size: 16px;
+	font-weight: 400;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 5px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+	margin-bottom: 10px;
+}
+
+/* for passenger form modal */
+.form-select {
+	border: 1px solid #262424 !important;
+	font-family: var(--font-primary);
+	font-weight: 500;
+	font-size: 18px;
+}
+.btn-close-modal {
+	border: 1px solid #F7901F;
+	font-family: var(--font-secondary);
+	font-size: 15px;
+	font-weight: 500;
+	color: #262424;
+	padding: 5px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+	background: var(--color-white) ;
+}
+
+.btn-close-modal:hover {
+	background: #F7901F;
+	color: var(--color-white);
+}
+
+.btn-save-modal {
+	background: #F7901F;
+	font-family: var(--font-secondary);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--color-white);
+	padding: 6px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+	border: none;
+}
+
+
+/* Delete Modal */
+.btn-delete {
+	background: #ff4040;
+	font-family: var(--font-secondary);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--color-white);
+	padding: 6px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+	border: none;
+}
+
+/* passenger table dropdown */
+.btn-dropdown {
+	border: none;
+	background: none;
+}
+
+.dropdown-item {
+	font-family: var(--font-secondary) !important;
+	font-size: 14px !important;
+	font-weight: 700 !important;
+
+}
+
+/* booking summary */
+.btn-submit {
+	background: #23AAE1;
+	font-size: 18px;
+	font-weight: 500;
+  color: var(--color-white);
+  padding: 5px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+}
+
+.btn-close-summary-modal {
+	font-size: 18px;
+	font-weight: 500;
+  color: #3E3E3E;
+  padding: 5px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: 1px solid #F7901F;
+	background: var(--color-white) ;
+}
+
+.btn-close-summary-modal:hover {
+	background: #F7901F;
+	color: var(--color-white);
+}
+

@@ -1,0 +1,98 @@
+img {
+	max-width: none !important;
+}
+
+section {
+	padding: 0;
+	overflow: hidden;
+	background-color: #0F75BC;
+}
+
+label {
+	color: #262424;
+	font-family: var(--font-secondary);
+	font-weight: 500;
+	font-size: 25px;
+	margin: 0;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	line-height: 1.5;
+	color: #262424 !important;
+	background-color: #F9F9F9;
+	background-clip: padding-box;
+	border: 1px solid #262424;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 15px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	font-family: var(--font-primary);
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(0,0,0, 0.12);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="date"] {
+	font-family: var(--font-primary);
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(0,0,0, 0.12);
+	font-style: italic; /* Adjust the alpha value (0.5) as needed */
+}
+
+.input-group-text,
+.btn {
+	font-style: italic;
+	border: 1px solid #262424;
+}
+
+.btn-register {
+	font-size: 22px;
+	font-weight: 500;
+  color: var(--color-white);
+  background: #F7901F;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+	border: none;
+}
+
+.btn-back {
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--color-white);
+	transition: 0.3s;
+	font-family: var(--font-primary);
+	border: none;
+	margin-left: -20px;
+}
+
+@media (max-width: 576px) {
+	.btn-back-home {
+		display: flex !important;
+		justify-content: center !important;
+	}
+}
+
+.btn-back:hover {
+	color: white;
+}
+
+.btn-back i {
+	margin-right: 20px;
+}
+
+/* mobile navigation */
+@media (max-width:768px) {
+	label {
+		font-size: 20px;
+	}
+}

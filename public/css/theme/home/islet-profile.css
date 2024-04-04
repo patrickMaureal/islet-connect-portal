@@ -1,0 +1,426 @@
+.hero-static-islet {
+  width: 100%;
+  min-height: 124vh;
+  background: url("../../../img/homepage/hero/islet-hero.png") center center;
+  background-size: cover;
+  position: relative;
+  padding: 160px 0 60px;
+	overflow: hidden;
+	z-index: 3;
+}
+
+.hero-static-islet h2 {
+  margin: 0 116px 10px 0;
+  font-size: 110px;
+  font-weight: 700;
+  color: #F7901F;
+  font-family: var(--font-secondary);
+}
+
+.hero-static-islet h2 span {
+  color: var(--color-primary);
+}
+
+.hero-static-islet p {
+	color: var(--color-white);
+  margin: 28px 160px 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+	font-family: var(--font-primary);
+}
+
+.hero-static-islet .btn-get-started {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 45px;
+  border-radius: 20px;
+  transition: 0.5s;
+  color: #3E3E3E;
+  background: #ffffff;
+  font-family: var(--font-primary);
+}
+
+@media (max-width:576px) {
+	.hero-static-islet {
+		min-height: 90vh;
+	}
+	.hero-static-islet h2 {
+		font-size: 65px;
+		margin: 0;
+		text-align: center;
+	}
+
+	.hero-static-islet p {
+		font-size: 14px;
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 991px) {
+  .browse-islet {
+    padding: 0;
+  }
+}
+.browse-islet {
+	position: relative;
+	z-index: 1;
+	padding: 0;
+}
+
+.browse-islet h4 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 5px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+	text-align: end;
+
+}
+
+/* carousel */
+.browse-islet .carousel-inner{
+	padding: 1em;
+}
+
+.browse-islet .carousel-control-prev,
+.browse-islet .carousel-control-next{
+	background-color: #e1e1e1;
+	width: 6vh;
+	height: 8vh;
+	border-radius: 45%;
+	top: 50%;
+	opacity: 1;
+	margin: 0 -30px;
+	transform: translateY(-50%);
+}
+
+.browse-islet .img-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	margin: 0 5px;
+}
+.browse-islet .img-wrapper img{
+	height: 228px;
+	width: 263.28px;
+	border-radius: 9px;
+}
+
+
+@media (min-width: 769px) {
+	.card-img-overlay{
+		top: 55% !important;
+		right: 35% !important;
+		left: -10% !important;
+	}
+}
+
+.card-footer {
+	border-top: 0;
+	font-family: var(--font-secondary);
+	font-weight: 600;
+	font-size: 23px;
+	color: #ffffff;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.card-footer {
+		font-size: 20px;
+	}
+}
+
+
+.card {
+	border: 0 !important;
+	background: transparent;
+}
+
+.carousel-img:hover {
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
+}
+
+.carousel-img {
+	transition: 0.5s ease-in-out;
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+@media (min-width: 768px) {
+  .browse-islet .carousel-inner {
+    display: flex;
+  }
+  .browse-islet .carousel-item {
+    margin-right: 2px;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
+
+@media (min-width:1441px) {
+	.browse-islet .carousel-item {
+		flex:0 0 30%;
+	}
+}
+
+@media (max-width: 576px) {
+	.browse-islet h4 {
+		text-align: center;
+	}
+
+	.browse-islet .carousel-control-prev,
+	.browse-islet .carousel-control-next{
+		margin: 0;
+	}
+}
+
+.search-islet-line {
+	margin-left: -2px;
+	margin-top: -302px;
+	position: absolute;
+	z-index: -1;
+}
+
+.about-islet {
+	position: relative;
+	z-index: 0;
+	padding-left: 95px ;
+	padding-right: 95px ;
+	background-image: url("../../../img/search-islets/about-bg.png");
+	background-repeat: no-repeat;
+	background-position: -264px 477px;
+	padding-bottom: 0;
+}
+
+.about-islet h2 {
+	font-size: 50px;
+	font-weight: 600;
+	margin-top: 5px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+}
+
+.about-islet p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 5px;
+	font-family: var(--font-primary);
+	color: #3E3E3E;
+	padding-right: 398px;
+}
+
+.about-islet-line {
+	margin-left: 335px;
+	margin-top: -232px;
+	position: absolute;
+	overflow-y: hidden;
+	z-index: -1;
+}
+
+.about-islet .carousel-control-prev, .carousel-control-next{
+	background-color: #e1e1e1;
+	width: 6vh;
+	height: 6vh;
+	border-radius: 45%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about-islet .carousel-control-next {
+	left: 99%;
+}
+
+.about-islet .external-controls {
+	margin-left: 207px;
+	margin-top: -53px;
+	position: absolute;
+	z-index: 1;
+}
+
+.control-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center; /* Center items */
+}
+
+.control-list li {
+	display: inline-block;
+	margin-right: 10px; /* Adjust spacing between items */
+	margin-bottom: 10px; /* Adjust spacing between rows */
+}
+
+.about-islet .control-button {
+	font-family: var(--font-secondary);
+  background-color: var(--color-white);
+	font-size: 21px;
+	font-weight: 400;
+  border: none;
+  padding: 5px 34px;
+  color: #333;
+  cursor: pointer;
+	margin: 0 10px;
+}
+
+.about-islet .control-button.active {
+	border: 3px solid #0F75BC;
+}
+
+.about-islet .carousel-item {
+  position: relative;
+}
+.about-islet .about-islet-profile {
+	margin-bottom: 50px;
+}
+.about-islet .about-islet-profile p {
+	font-family: var(--font-primary);
+	color: var(--color-white);
+	font-weight: 400;
+	font-size: 18px;
+	padding-right: 0;
+	margin-left: 27px;
+}
+
+.about-islet .about-islet-profile h2 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 5px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+	margin-left: -52px;
+}
+
+.about-content {
+	margin-top: 35px;
+}
+
+.about-islet .about-islet-activities h2 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 5px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+	margin-left: -52px;
+	padding-right: 100px;
+}
+
+.about-content .about-islet-activities p {
+	font-family: var(--font-primary);
+	color: var(--color-white);
+	font-weight: 400;
+	font-size: 18px;
+	padding-right: 0;
+}
+
+.about-content .about-islet-map h2 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 3px;
+	font-family: var(--font-secondary);
+	color: #3E3E3E;
+	position: fixed;
+	margin-left: 64px;
+	line-height: .9;
+	z-index: 10;
+}
+
+.about-content .portfolio {
+	padding: 0;
+}
+
+.about-content .portfolio img {
+	width: 269px;
+	height: 194.6px;
+	border-radius: 15px;
+	border: none;
+	margin: 10px 5px;
+}
+.about-content .portfolio ul {
+	margin-top: 25px;
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+.about-content .portfolio ul li {
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--color-black);
+	border: 2px solid #23AAE1;
+	border-radius: 18px;
+	padding: 6px 55px;
+	margin-bottom: 10px;
+}
+
+.about-content .portfolio .portfolio-flters li:hover,
+.portfolio .portfolio-flters li.filter-active {
+	border: 2px solid #F7901F;
+}
+
+@media (max-width:768px) {
+	.about-islet {
+		padding: 0 25px;
+		background-position: -471px 477px;
+	}
+	.about-islet h2 {
+		font-size: 30px;
+
+	}
+
+	.about-islet p {
+		padding-right: 0;
+		font-size: 10px;
+	}
+
+	.about-islet .about-islet-profile h2 {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.about-islet .external-controls {
+		margin-left: 6px;
+		margin-top: -34px;
+	}
+
+	.about-islet .control-button {
+		font-size: 11px;
+		margin: 0;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+
+	.control-list li {
+		margin: 0;
+	}
+
+	.about-islet .about-islet-activities h2 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.card-img-overlay {
+		background: rgba(108, 122, 137, 0.4);
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.about-islet .external-controls {
+			margin-left: 207px;
+			margin-top: -34px;
+	}
+}
+
+@media (min-width:1441px) {
+	.about-content .about-islet-activities p {
+		padding-right: 230px;
+	}
+}
+
+
+

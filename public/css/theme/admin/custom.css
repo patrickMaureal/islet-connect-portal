@@ -1,0 +1,12 @@
+.spinner {
+  display: none;
+}
+.dataTables_filter {
+	display: none;
+}
+.dataTables_length {
+	display: none;
+}
+.bootstrap-select {
+	border: 0.0625rem solid #D1D5DB !important;
+}
